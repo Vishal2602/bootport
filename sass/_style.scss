@@ -29,6 +29,12 @@
     }
   }
 
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
   @media (max-width: 768px) {
     .fixed {
       position: relative;
@@ -40,6 +46,8 @@
 
 .heade {
   margin-top: 12rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 #site-main {
@@ -65,12 +73,15 @@
 }
 
 .proo {
-  background: rgba(0, 0, 0, 0.658) !important;
-  border: 0.5px solid rgba(0, 0, 0, 0.514) !important;
+  background: rgba(0, 0, 0, 0.3);
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
   box-sizing: border-box;
-  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(40px);
+  /* Note: backdrop-filter has minimal browser support */
+
   border-radius: 20px;
+  color: white !important;
 }
 
 @media (max-width: 768px) {
