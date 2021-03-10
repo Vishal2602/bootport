@@ -1,4 +1,6 @@
 #header {
+  position: relative;
+
   .fixed {
     width: 33vw;
     height: 100%;
@@ -44,6 +46,18 @@
   }
 }
 
+.bgimages {
+  position: absolute;
+  left: 35%;
+  top: -20%;
+}
+
+.bgimages2 {
+  position: absolute;
+  left: 35%;
+  top: 105%;
+}
+
 .heade {
   margin-top: 12rem;
   padding-top: 2rem;
@@ -52,7 +66,7 @@
 
 #site-main {
   #info {
-    background: white;
+    background: rgb(10, 10, 10);
     padding: 1rem;
   }
 }
@@ -73,11 +87,11 @@
 }
 
 .proo {
-  background: rgba(0, 0, 0, 0.3);
-  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.274);
+  border: 0.5px solid rgba(255, 255, 255, 0.205);
   box-sizing: border-box;
-  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(40px);
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.411);
+  backdrop-filter: blur(20px);
   /* Note: backdrop-filter has minimal browser support */
 
   border-radius: 20px;
@@ -88,4 +102,22 @@
   .heade {
     margin-top: 1rem !important;
   }
+
+  .bgimages {
+    display: none;
+  }
+  .bgimages2 {
+    display: none;
+  }
+}
+
+.card-img-top {
+  border-radius: 10px;
+}
+
+.row,
+body,
+#site-main,
+.container-fluid {
+  background-color: rgb(10, 10, 10) !important;
 }
